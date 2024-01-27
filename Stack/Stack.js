@@ -1,13 +1,19 @@
 import HomeScreen from "../Screens/Home/Home";
 import MapsScreen from "../Screens/Maps/Maps";
 
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-const Stack = createNativeStackNavigator();
+import { createStackNavigator } from "@react-navigation/stack";
+const Stack = createStackNavigator();
 
 const StackNavigator = () => {
   return (
     <>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          gestureEnabled: true,
+          gestureDirection: "horizontal",
+          headerMode: "float",
+        }}
+      >
         <Stack.Screen
           name="Home"
           component={HomeScreen}
@@ -16,7 +22,9 @@ const StackNavigator = () => {
         <Stack.Screen
           name="MapScreen"
           component={MapsScreen}
-          options={{ headerShown: false }}
+          options={{
+            presentation: "modal",
+          }}
         />
       </Stack.Navigator>
     </>

@@ -1,0 +1,16 @@
+1- install reduxjs/toolkit
+2- install react native Navigation / Stack
+3- install react-native-gesture-handler
+4- install react-native-vector-icons
+5- install react-native-google-places-autocomplete Get to Api  (Dircations Api / Places Api / Distance Matrix Api)
+6- install react-native-elements
+7- install npx expo install react-native-maps
+8- npm install react-native-maps-directions
+
+
+
+// This URL used to connect origin and destination get time travel information
+# https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=&{origin.description}&destinations=&{destination.description}&key=&{GoogleKeyApi}
+
+imperial => Miles
+metric => Kilometers

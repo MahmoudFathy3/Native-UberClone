@@ -3,7 +3,7 @@ import { FlatList, SafeAreaView } from "react-native";
 import { DATA } from "../data";
 import ItemList from "./ItemList";
 
-const NavOpation = () => {
+const NavOpations = () => {
   return (
     <SafeAreaView style={{ paddingLeft: 10 }}>
       <FlatList
@@ -18,4 +18,4 @@ const NavOpation = () => {
   );
 };
 
-export default NavOpation;
+export default NavOpations;

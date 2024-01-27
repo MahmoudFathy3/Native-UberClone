@@ -1,19 +1,23 @@
-import { StatusBar } from "react-native";
+import { KeyboardAvoidingView, Platform } from "react-native";
 import { Provider } from "react-redux";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 import Store from "./Store";
 import { NavigationContainer } from "@react-navigation/native";
 import StackNavigator from "./Stack/Stack";
 
+import "react-native-gesture-handler";
+
 export default function App() {
   return (
     <>
-      <StatusBar />
       <Provider store={Store}>
-        <NavigationContainer initialRouteName='Home'>
-          <SafeAreaProvider>
+        <NavigationContainer>
+          <KeyboardAvoidingView
+            behavior={Platform.OS === "ios" ? "padding" : "height"}
+            keyboardVerticalOffset={Platform.OS === "ios" ? -64 : 0}
+            style={{ flex: 1 }}
+          >
             <StackNavigator />
-          </SafeAreaProvider>
+          </KeyboardAvoidingView>
         </NavigationContainer>
       </Provider>
     </>
