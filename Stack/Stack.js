@@ -11,7 +11,6 @@ const StackNavigator = () => {
         screenOptions={{
           gestureEnabled: true,
           gestureDirection: "horizontal",
-          headerMode: "float",
         }}
       >
         <Stack.Screen

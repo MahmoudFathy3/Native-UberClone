@@ -39,7 +39,6 @@ const Maps = ({ navigation }) => {
           screenOptions={{
             gestureEnabled: true,
             gestureDirection: "horizontal",
-            headerMode: "float",
             headerShown: false,
           }}
         >

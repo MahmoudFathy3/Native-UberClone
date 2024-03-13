@@ -1,5 +1,11 @@
 import React from "react";
-import { SafeAreaView, View, Text, StyleSheet, Platform } from "react-native";
+import {
+  SafeAreaView,
+  View,
+  Text,
+  StyleSheet,
+  Platform,
+} from "react-native";
 import { useDispatch } from "react-redux";
 import { setOrigin } from "../../Slices/navSlice";
 import GooglePlaces from "../../Components/GooglePlaces";
@@ -13,8 +19,6 @@ const Home = () => {
 
   return (
     <SafeAreaView style={[styles.container, platform]}>
-
-      
       <View style={styles.wapper}>
         <Text style={styles.text}>Uber</Text>
       </View>
@@ -41,7 +45,7 @@ const Home = () => {
       />
 
       <NavOpations />
-      <NavFavorites />
+      {/* <NavFavorites /> */}
     </SafeAreaView>
   );
 };

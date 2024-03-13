@@ -1,27 +1,31 @@
 {
   "expo": {
     "name": "Uber-Clone",
-    "slug": "Uber-Clone",
+    "slug": "uber-clone-2",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/uber1.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/uber1.png",
+      "backgroundColor": "#fff",
+      "resizeMode": "cover"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.mahmoudfathy1997.UberClone"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/uber1.png",
+        "backgroundColor": "#fff",
+        "resizeMode": "cover"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC9WQLP5eJ78fUI_EbQ7ZTcPhFBcGoqVlY"
+        }
       },
       "package": "com.mahmoudfathy1997.UberClone"
     },
@@ -30,8 +34,11 @@
     },
     "extra": {
       "eas": {
-        "projectId": "11602421-bfd4-4bcc-9e90-9de759adc9ee"
+        "projectId": "10a4b3c3-5ae6-4b29-b781-5c7e92b5adb5"
       }
-    }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {},
+    "owner": "mahmoudfathy1997"
   }
 }

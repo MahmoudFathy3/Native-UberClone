@@ -13,22 +13,22 @@ import { useSelector } from "react-redux";
 
 const data = [
   {
-    id: "UberX-1",
-    name: "UberX",
+    id: "RideX-1",
+    name: "RideX",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzc_lRR6fFaLn4XB_MY7iyPKjh33JyerpPOQ&usqp=CAU",
     multiplier: 1,
   },
   {
-    id: "Uber XL-2",
-    name: "Uber XL",
+    id: "Ride XL-2",
+    name: "Ride XL",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrFALWaOKCvJ5ovdgpY-tRGytAhLt8M2vO_g&usqp=CAU",
     multiplier: 1.2,
   },
   {
-    id: "Uber LUX-3",
-    name: "Uber LUX",
+    id: "Ride LUX-3",
+    name: "Ride LUX",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe9508vP6V4AF13PhtNHeljjo9p8P942k-HhptdxRdo8AlK1rlnf-ZRyQrcLDQaMKQ3Wk&usqp=CAU",
     multiplier: 1.75,

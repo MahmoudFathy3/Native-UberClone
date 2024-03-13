@@ -12,7 +12,7 @@ const GooglePlaces = (props) => {
         enablePoweredByContainer={false}
         query={{
           key: process.env.EXPO_PUBLIC_GOOGLE_MAPS_APIKEY,
-          language: "ar",
+          language: "en",
         }}
         fetchDetails={true}
         nearbyPlacesAPI="GooglePlaceSearch"

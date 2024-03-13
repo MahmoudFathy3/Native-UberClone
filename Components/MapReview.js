@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React, { useEffect, useRef } from "react";
 import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 
@@ -30,7 +29,7 @@ const MapReviews = () => {
 
     const getTimeTravel = async () => {
       fetch(
-        `https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=${origin.description}&destinations=${destination.description}&key=${process.env.EXPO_PUBLIC_GOOGLE_MAPS_APIKEY}`
+        `${process.env.EXPO_PUBLIC_GOOGLE_MAPS_APIURL}/json?units=metric&origins=${origin.description}&destinations=${destination.description}&key=${process.env.EXPO_PUBLIC_GOOGLE_MAPS_APIKEY}`
       )
         .then((res) => res.json())
         .then((data) => {
@@ -45,8 +44,7 @@ const MapReviews = () => {
     <MapView
       style={{ flex: 1 }}
       ref={mapRef}
-      showsUserLocation={true}
-      zoomControlEnabled={true}
+      mapType="terrain"
       provider={PROVIDER_GOOGLE}
       initialRegion={{
         latitude: origin.location.lat,
